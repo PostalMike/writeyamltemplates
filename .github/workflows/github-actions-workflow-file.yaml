@@ -19,6 +19,7 @@ jobs:
       # A context is a collection of properties about the environment or object that it represents.
       # The line below is commented out until clip Demo External Triggers of module Exploring
       # GitHub Actions Workflows
+      # *** 'run' operates the shell being used.  ubuntu-latest will use Bash, the default Linux shell.
       - run: echo "Payload field is ${{ github.event.client_payload.mydata}}"
       
       # Display the event that tribgered the workflow
