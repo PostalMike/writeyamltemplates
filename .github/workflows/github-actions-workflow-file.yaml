@@ -1,10 +1,10 @@
 name: GitHub Actions Demo
 
-on: #push
+on: push
 #push was used to demonstrate what triggered the workflow in the last demo -- a push to Git
 #repository_dispatch is used to manually trigger the workflow when we have the type run_my_workflow
-  repository_dispatch: 
-    types: [run_my_workflow]
+#  repository_dispatch: 
+#    types: [run_my_workflow]
 
 jobs:
   Example-Actions-Job:
