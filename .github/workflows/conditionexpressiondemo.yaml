@@ -7,6 +7,10 @@ on:
         description: 'Fail step in Job1 (yes/no)'
         required: true
         default: 'no'
+        
+permissions:
+  packages: write
+  contents: read        
 
 jobs:
   first-job:
