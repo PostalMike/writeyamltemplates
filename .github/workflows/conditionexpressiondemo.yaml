@@ -8,9 +8,9 @@ on:
         required: true
         default: 'no'
         
-permissions:
-  packages: write
-  contents: read        
+#permissions:
+#  packages: write
+#  contents: read        
 
 jobs:
   first-job:
