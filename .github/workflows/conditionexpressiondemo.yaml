@@ -6,11 +6,7 @@ on:
       failstep:
         description: 'Fail step in Job1 (yes/no)'
         required: true
-        default: 'no'
-        
-#permissions:
-#  packages: write
-#  contents: read        
+        default: 'no'    
 
 jobs:
   first-job:
