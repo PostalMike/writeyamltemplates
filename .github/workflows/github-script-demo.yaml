@@ -2,6 +2,10 @@ name: Testing Github-Script
 
 on:
   workflow_dispatch:
+  
+permissions:
+  packages: write
+  contents: read
 
 jobs:
   build:
