@@ -12,7 +12,7 @@ jobs:
         id: create-comment
         with:
           script: |
-            #does inserting a comment within a | (multiline) block throw an error?
+            # does inserting a comment within a | (multiline) block throw an error?
             console.log(context);
             
             github.rest.issues.create({
