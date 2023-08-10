@@ -10,9 +10,9 @@ jobs:
     steps:
       - uses: actions/github-script@v5
         id: create-comment
-        with:
+        with:          
+          # context object will be printed to console.log, this contains info on the workflow run.
           script: |
-            # does inserting a comment within a | (multiline) block throw an error?
             console.log(context);
             
             github.rest.issues.create({
