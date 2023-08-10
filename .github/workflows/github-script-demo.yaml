@@ -12,6 +12,7 @@ jobs:
         id: create-comment
         with:
           script: |
+            #'context' is an object containing info about the workflow run
             console.log(context);
             
             github.rest.issues.create({
