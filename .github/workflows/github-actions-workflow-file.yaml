@@ -6,11 +6,11 @@ on:
 #if push: is uncommented, any push to this repo will trigger it, so it is commented out
 #until we intend to have it run on a push to this repo.
 #repository_dispatch is used to manually trigger the workflow 
-#when we have the type run_my_workflow
-# workflow_dispatch: will make the Run Workflow button appear, this allows running
-# manually within github.
+#when we have the type run_my_workflow.  This is a custom made-up type shown in Neil's course .
   repository_dispatch: 
     types: [run_my_workflow]
+# workflow_dispatch: will make the Run Workflow button appear, this allows running
+# manually within github.
   workflow_dispatch:  
 
 jobs:
